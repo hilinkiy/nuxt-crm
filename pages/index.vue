@@ -1,7 +1,7 @@
 <template>
   <div class="p-10">
     <h1 class="font-bold text-2xl mb-10">
-      CRM system by Me
+      Dashboard
     </h1>
     <div v-if="isLoading">Loading...</div>
     <div v-else>

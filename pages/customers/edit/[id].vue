@@ -13,13 +13,13 @@
       <img
           v-if="values.avatar_url || isUploadImagePending"
           :src="values.avatar_url" alt="AVATAR"
-          width="50"
-          height="50"
-          class="rounded-full my-2"
+          width="250"
+          height="250"
+          class="my-4"
       />
       <div class="grid w-full max-w-sm items-center gap-1.5 input">
         <label>
-          <div class="text-sm mb2">Аватарка</div>
+          <div class="text-sm mb-2">Аватарка</div>
           <UiInput placeholder="" type="file" :onchange="(e:InputFileEvent) => e?.target?.files?.length && uploadImage(e.target.files[0])" :disabled="isUploadImagePending"/>
         </label>
       </div>
